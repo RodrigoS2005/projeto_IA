@@ -22,4 +22,5 @@ A parte mais interessante foi ver onde o modelo falha. Reparámos que quando há
 O nosso grupo é composto por: 
 
 Autores: João Reis; Rodrigo Simões; José Lourenço; Tiago Ramos; Tomás Fernandes 
+
 Números: 30010484; 30012765; 30013434; 30012727; 30013307
