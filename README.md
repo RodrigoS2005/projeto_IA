@@ -18,3 +18,6 @@ Modelos de ML: Testámos Ridge, Random Forest e Gradient Boosting. O Gradient Bo
 
 Análise dos Resultados:
 A parte mais interessante foi ver onde o modelo falha. Reparámos que quando há temperaturas muito extremas, o erro sobe bastante. Isto faz sentido porque as pessoas mudam os hábitos de repente quando o tempo aperta.
+O nosso grupo é composto: 
+Autores: João Reis; Rodrigo Simões; José Lourenço; Tiago Ramos; Tomás Fernandes 
+Números: 30010484; 30012765; 30013434; 30012727; 30013307
