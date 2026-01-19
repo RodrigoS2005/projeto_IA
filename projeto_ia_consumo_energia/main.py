@@ -155,7 +155,12 @@ gb = GradientBoostingRegressor(n_estimators=150, learning_rate=0.1, max_depth=5,
 gb.fit(X_train, y_train)
 y_pred_gb = gb.predict(X_test)
 resultados.append(calcular_metricas(y_test, y_pred_gb, "Gradient Boosting"))
-
+# --- Implementação do Oráculo (Requisito do Projeto) ---
+# O Oráculo representa o limite superior de performance (upper bound)[cite: 48, 139].
+ridge_oracle = Ridge(alpha=1.0)
+ridge_oracle.fit(X_train_scaled, y_train)
+y_pred_oracle = ridge_oracle.predict(X_test_scaled)
+resultados.append(calcular_metricas(y_test, y_pred_oracle, "Oráculo (Info Perfeita)"))
 print("\n--- 4. Modelo Estatístico (SARIMA) ---")
 # Nota: Treinar SARIMA em 15.000 pontos é computacionalmente inviável para uma demo rápida.
 # Vamos usar os últimos 700 dias (~2 anos) do treino para ajustar o SARIMA.
